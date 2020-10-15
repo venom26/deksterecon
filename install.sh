@@ -47,6 +47,8 @@ echo "done"
 echo "Installing Findomain"
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
 chmod +x findomain-linux
+mv findomain-linux findomain
+sudo cp findomain /usr/local/bin/
 echo "done"
 
 echo "Installing Aquatone"
