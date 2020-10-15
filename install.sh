@@ -13,7 +13,7 @@ go get -u github.com/tomnomnom/anew
 echo "done"
 
 echo "Installing Naabu"
-go get -u -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+GO111MODULE=on go get -u -v github.com/projectdiscovery/naabu/v2/cmd/naabu
 echo "done"
 
 echo "Installing Subfinder"
@@ -33,7 +33,7 @@ mv massdns/bin/massdns /usr/local/bin/
 echo "done"
 
 echo "Installing Shuffledns"
-go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 echo "done"
 
 echo "Installing Gau"
