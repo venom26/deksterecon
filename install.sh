@@ -56,6 +56,10 @@ mv aquatone /usr/local/bin
 sudo apt install -y chromium-browser
 echo "done"
 
+echo "Installing SubJS"
+GO111MODULE=on go get -u -v github.com/lc/subjs
+echo "Done"
+
 echo "Installing Dirsearch"
 git clone https://github.com/maurosoria/dirsearch.git
 echo "done"
