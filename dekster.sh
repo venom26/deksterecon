@@ -6,6 +6,7 @@ mkdir /var/www/html/$1-$3
 
 amass enum -passive -d $1 | tee -a /var/www/html/$1-$3/$1-subs.txt 
 subfinder -d $1 -recursive | tee -a /var/www/html/$1-$3/$1-subs.txt
+findomain-linux -t $1 -u /var/www/html/$1-$3/$1-subs.txt
 cat /var/www/html/$1-$3/$1-subs.txt | sort -u >> /var/www/html/$1-$3/$1-subs-temp.txt
 rm -rf /var/www/html/$1-$3/$1-subs.txt
 mv /var/www/html/$1-$3/$1-subs-temp.txt /var/www/html/$1-$3/$1-subs.txt
