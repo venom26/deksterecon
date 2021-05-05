@@ -13,15 +13,11 @@ go get -u github.com/tomnomnom/anew
 echo "done"
 
 echo "Installing Naabu"
-GO111MODULE=on go get -u -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
 echo "done"
 
 echo "Installing Subfinder"
-git clone https://github.com/projectdiscovery/subfinder.git
-cd subfinder/v2/cmd/subfinder
-go build .
-mv subfinder /usr/local/bin/
-cd ../../../../
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
 echo "done"
 
 echo "Installing MassDNS"
@@ -33,7 +29,7 @@ mv massdns/bin/massdns /usr/local/bin/
 echo "done"
 
 echo "Installing Shuffledns"
-GO111MODULE=on go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+GO111MODULE=on go get -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 echo "done"
 
 echo "Installing Gau"
